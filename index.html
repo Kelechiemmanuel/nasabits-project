@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="WhatsApp_Image_2023-04-10_at_17.26.04-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>NasaBits ICT Academy</title>
+    
+    <style>
+             body{
+            margin: 0;
+            padding: 0;
+            /* background-image: url(group2.webp); */
+            background-size: cover;
+            background-position: top;
+        }
+        *{
+          font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        header{
+            width: 100%;
+            height: 20vh;
+            position: fixed;
+            top: 0;
+            background-color: #fff;
+            z-index: 100;
+            right: 0;
+            width: 100%;
+            left: 0;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        }
+       
+           .logo{
+            width: 70px;
+        }
+        .hamburger{
+            width: 30px;
+        }
+        .nav-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 2px;
+            margin-left: 100px;
+            margin-right: 40px;
+        }
+        .nav-items{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .nav-lists{
+            display: flex;
+        }
+        .nav-bar{
+         list-style: none;
+         margin: 20px;
+        }
+        .nav-link{
+            text-decoration: none;
+            color: #00203fff;
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            transition: all 0.5s;
+        }
+        .nav-link:hover{
+          text-decoration: underline;
+          color: lightblue;
+          transform: scale(1.1);
+        }
+       
+        .pri-btn{
+            background-color: #fff;
+            border: none;
+            height: 40px;
+            width: 100px;
+            color: #5cc8d7ff;
+            border: 2px solid #5cc8d7ff;
+           
+        }
+        .pri-btn:hover{
+            background-color:  transparent;
+            color: #fff;
+        }
+        .btn-container:hover{
+            background-color:  #5cc8d7ff;
+        }
+      
+        .home{
+            display: flex;
+            justify-content: center;
+        }
+        .center{
+            margin-top: 10px;
+            height: 76vh;
+            width: 100%;
+            background-image: url(group2.webp);
+            background-position: center;
+            background-size: cover;
+        }
+      
+        .header-container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #00203fff;
+            height: 30px;
+        }
+        .nav-link2{
+            margin: 15px;
+        }
+        .link{
+            display: flex;
+        }
+        i{
+          color: #5cc8d7ff;
+        }
+        li{
+            list-style: none;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        a{
+            text-decoration: none;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .media-handle{
+            display: flex;
+            margin-right: 40px;
+        }
+        .media{
+            margin: 15px;
+        }
+
+        
+          *{
+    font-family: Georgia;
+}
+
+.carousel {
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    margin-top: 150px;
+    
+}
+
+    
+    #slideset1 > *:nth-child(1) {animation-delay: 0s}
+#slideset1 > *:nth-child(2) {animation-delay: 4s}
+#slideset1 > *:nth-child(3) {animation-delay: 8s}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    animation: slide 20s infinite;
+    transition: 1s;
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+}
+
+.carousel-item img {
+    display: block;
+    height: 500px;
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    position: relative;
+    
+}
+.carousel-item{
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    height: 500px;
+    
+}
+
+.carousel-control {
+    background: rgba(0, 0, 0, 0.678);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 2%;
+}
+
+.carousel-control.next {
+    right: 2%;
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carousel-bullet:hover {
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #428bca;
+    
+}
+
+#title {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+}
+.black{
+    background-color: rgba(0, 31, 63, 0.664);
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    height: 500px;
+}
+.preview, .title{
+    color: #fff;
+}
+.preview{
+    font-size: 26px;
+}
+.shield{
+    margin-top: 150px;
+}
+
+          @media screen and (max-width: 900px) {
+            .nav-items{
+                display: none;
+            }
+            .pri-btn{
+                display: none;
+            }
+            .header-container{
+                display: none;
+            }
+            .logo{
+                margin-top: 40px;
+            }
+            .hamburger{
+                margin-top: 40px;
+                margin-right: 40px;
+            }
+            .logo{
+              margin-left: -60px;
+            }
+        }
+          .partner{
+            margin-top: 40px;
+            background-color: rgba(92, 201, 215, 0.322);
+            padding-top: 50px;
+            height: 280px;
+          }
+          .logo22{
+            width: 200px;
+          }
+          .spornsor{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px;
+
+          }
+          .up{
+            text-align: center;
+            color: #00203fff;
+          }
+          .down{
+            text-align: center;
+            color: #00203fff;
+          }
+          .dan{
+            width: 700px;
+            
+          }
+          .space-con{
+            display: flex;
+            justify-content: center;
+            width: 100%;            
+            background-color: #428bca;
+            height: 82vh;
+
+          }
+          .img8{
+            /* margin-right: 10px; */
+            width: 45%;
+          }
+          .group-all{
+            display: flex;
+            justify-content: space-around;
+          }
+          .space{
+            width: 600px;
+            height: 72.5vh;
+            margin-left: 100px;
+            padding-left: 30px;
+            padding-right: 20px;
+            background-color:  rgba(0, 31, 63, 0.904);
+          }
+          .space3{
+            width: 600px;
+            height: 72.5vh;
+            margin-left: 100px;
+            padding-left: 30px;
+            padding-right: 20px;
+            background-color:  #00203fff;
+          }
+          .group{
+            /* border: 1px solid blue; */
+            width: 150px;
+            padding-top: 7px;
+            background-color: rgba(0, 31, 63, 0.815);
+            box-shadow: 0 0 5px 0 black;
+            height: 130px;
+            margin-top: 5px;
+            text-align: center;
+          }
+          .group:hover{
+            transition: all 0.23s;
+            transform: scale(1.1);
+          }
+          .tall, .tall2, .tall3{
+            color: #fff;
+            font-size: 16px;
+          }
+          .tall2, .tall3{
+            font-weight: 900;
+            margin-bottom: -10px;
+            font-size: 30px;
+          }
+          .tall2{
+            margin-top: 5px;
+          }
+          .link-group{
+            font-size: 40px;
+          }
+          .box-overall{
+            width: 100%;
+            height: 50vh;
+        }
+        .pin,.pin3,.normal{
+            text-align: center;
+            color: #00203fff;
+        }
+        .pin2{
+          text-align: center;
+          color: #fff;
+        }
+
+        .d-main{
+            display: flex;
+        }
+        .box1{
+            width: 30%;
+            height: 55vh;
+            margin: 10px;
+            padding-top: 40px;
+            padding-left: 30px;
+            padding-right: 30px;
+            border-radius: 5px;
+            padding-bottom: 40px;
+            background-color:  #00203fff;
+            color: white;
+        }
+        .box1:hover{
+            background-color: #5cc8d7ff;
+            color: rgb(6, 6, 53);
+            transition: all 0.5s;
+            transform: scale(1);
+        }
+        .btn3{
+            margin-left: 22%;
+            height: 40px;
+            width: 150px;
+            background-color:  #00203fff;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            border: 1px solid #5cc8d7ff;
+        }
+        .btn3:hover{
+            background-color:  #00203fff;
+        }
+        .pre{
+        margin-left: 50px;
+      }
+      .box5-overall{
+        margin-top: 50px;
+      }
+      .img2{
+        width: 250px;
+        border-radius: 10px;
+      }
+      .img2:hover{
+        transition: all 0.5s;
+        transform: scale(1.1);
+      }
+      .contain-it{
+            margin-top: 255px;
+            margin-bottom: 150px;
+        }
+        .apply{
+          background-color:  #5cc8d7ff;
+          color: #00203fff;
+          height: 40px;
+          font-size: 16px;
+          width: 180px;
+          border: none;
+          margin: 10px;
+        }
+        @media screen and (max-width: 800px) {
+          .spornsor{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+          .d-main{
+            display: flex;
+            flex-wrap: wrap;
+          }
+          .partner{
+            height: 90vh;
+            padding-left: 40px;
+            padding-right: 40px;
+          }
+          .space-con{
+            /* display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-left: 10px;
+            margin-right: 10px;
+            height: 100vh; */
+            /* width: 450px; */
+          }
+          .box1{
+            width: 700px;
+            text-align: center;
+            /* margin-top: 100px; */
+          }
+          .space{
+            margin-top: 0;
+            margin-right: 10px;
+            height: 100vh;
+            width: 800px;
+            margin-left: 10px;
+          }
+          .space3{
+            margin-top: 0;
+            margin-right: 10px;
+            height: 100vh;
+            width: 800px;
+            margin-left: 10px;
+          }
+          .btn3{
+            margin-right: 100px;
+          }
+          .box-overall{
+            margin-top: 90px;
+          }
+          .group-all{
+            margin-bottom: 50px;
+            
+          }
+          .img8{
+            width: 200px;
+            margin-right: 10px;
+            margin-left: 10px;
+          }
+          .space-con1{
+            margin-top: 1530px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: 3px;
+          }
+          .space-con2{
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: 3px;
+          }
+          .contain-it{
+            margin-top: 1655px;
+          }
+          
+        }
+        @media screen and (max-width: 500px) {
+          .dan{
+            width: 100%;
+         
+          }
+          .dan2{
+            width: 460px;
+            margin-right: 100px;
+            object-position: right;
+          }
+          .box-overall{
+            margin-top: 60px;
+          }
+          .space{
+            margin-top: 0;
+            margin-right: 10px;
+            height: 90vh;
+            width: 450px;
+            margin-left: 10px;
+          }
+          .space3{
+            margin-top: 0;
+            margin-right: 10px;
+            height: 60vh;
+            width: 450px;
+            margin-left: 10px;
+          }
+          .group{
+            width: 130px;
+          }
+          
+        }
+        @media screen and (min-width: 900px) {
+          .hamburger{
+            display: none;
+          }
+          
+        }
+
+        
+        .space-con1{
+          display: flex;
+
+        }
+        .space-con2{
+          display: flex;
+
+        }
+        .dan2{
+          width: 700px;
+        }
+
+
+        .section2{
+            display: flex;
+            background-image: url(eko.jpg);
+            background-position: top;
+            margin-top: 50px;
+          }
+          .select{
+            background-color: rgba(0, 31, 63, 0.719);
+            width: 100%;
+            justify-content: space-around;
+            display: flex;
+            height: 300px;
+          }
+          .flex{
+            text-align: left;
+          }
+          .flex2{
+            margin-left: -40px;
+          }
+          .flex3:hover{
+            text-decoration: underline;
+          }
+          .flex3{
+            color: #5cc8d7ff;
+          }
+          .log{
+            width: 300px;
+            color: #5cc8d7ff;
+          }
+          .log2{
+            color: #5cc8d7ff;
+          }
+          @media screen and (max-width: 500px) {
+            .section2{
+            margin-top: 30px;
+            width: 100%;
+            margin: 0;
+            margin-top: 50px;
+        }
+        .select{
+            display: flex;
+            flex-wrap: wrap;
+            height: 100vh;
+            width: 100%;
+        }
+        .log2{
+            width: 400px;
+        }
+        .normal{
+          margin-left: 50px;
+          margin-right: 50px;
+        }
+       
+        .copy{
+          width: 100%;
+        }
+      }
+      .copy{
+        background-color: #000000c7;
+        margin-top: -15px;
+        height: 40px;
+        height: 100%;
+      }
+      .copy2{
+        color: #fff;
+        text-align: center;
+      }
+      .a5{
+        color: #5cc8d7ff;
+      }
+      .lin{
+        color: #5cc8d7ff;
+      }
+      .lin2{
+        color: #00203fff;
+      }
+      .lin:hover{
+        text-decoration: underline;
+      }
+      .lin2:hover{
+        text-decoration: underline;
+      }
+      .apply:hover{
+        opacity: 0.8;
+      }
+
+      .row{
+        display: inline-block;
+        position: relative;
+      }
+      .col{
+        position: absolute;
+        width: 250px;
+        border-radius: 10px;
+        left: -140px;
+        top: 70px;
+        text-align: center;
+        display: none;
+        color: white;
+        transition: all 2s;
+        background-color: rgba(0, 31, 63, 0.808);
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        overflow: auto;
+      }
+      .row:hover .col{
+        display: block;
+      }
+      .col a{
+        display: block;
+        padding: 5px;
+        color: white;
+        text-decoration: none;
+      }
+      .col a:hover{
+        color: #ffff;
+        background-color: #5cc8d7ff;
+
+      }
+      .a{
+        text-align: left;
+        margin-left: 30px;
+      }
+      p{
+        font-family: Georgia;
+      }
+      .blueshade{
+        color: #5cc8d7ff;
+      }
+      .pin3{
+        text-align: center;
+        color: #00203fff;
+      }
+      h2{
+        text-align: center;
+      }
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <ul class="link">
+          <li>
+              <a  class="nav-link2" href="#">
+                  <i class="fa fa-phone" aria-hidden="true"> +2348173768505</i>
+              </a>
+          </li>
+          <li>
+              <a class="nav-link2" href="#">
+                  <i class="fa fa-map-marker" aria-hidden="true"> No 4, Asibi Street off Jos Rd, Lafia</i>
+              </a>
+          </li>
+          <li>
+              <a  class="nav-link2" href="#">
+                  <i class="fa fa-home" aria-hidden="true"> hello@nasabitsacademy</i>
+              </a>
+          </li>
+      </ul>
+      <div class="media-handle">
+          <div class="media">
+              <a href="https://www.facebook.com/">
+                  <i class="fa fa-facebook-f"></i>
+              </a>
+          </div>
+          <div class="media">
+              <a href="https://www.instagram.com/">
+                  <i class="fa fa-instagram"></i>
+              </a>
+          </div>
+          <div class="media">
+              <a href="https://www.linkedin.com//">
+                  <i class="fa fa-linkedin"></i>
+              </a>
+          </div>
+      </div>
+      </div>
+    <div class="nav-container">
+        <div>
+            <img class="logo" src="WhatsApp_Image_2023-04-10_at_17.26.04-removebg-preview.png" alt="">
+        </div>
+        <nav class="nav-items">
+            <ul class="nav-lists">
+                <li class="nav-bar">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-bar">
+                    <a class="nav-link" href="about3.html">About Us</a>
+                </li>
+                <li class="nav-bar">
+                    <a class="nav-link" href="program.html">Courses</a>
+                </li>
+                <li class="nav-bar">
+                    <a class="nav-link" href="contantact6.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="btn-container">
+            <button class="pri-btn">
+              <a class="lin2" href="donation.html">DONATE</a>
+            </button>
+        </div>
+        <div class="btn-container">
+          <button class="pri-btn">
+            <a class="lin2" href="apply.html">LOGIN</a>
+          </button>
+      </div>
+            <!-- <img class="hamburger" src="Hamburger_icon.svg.png" alt=""> -->
+            <div class="box">
+              <div class="row">
+                  <img class="hamburger" src="Hamburger_icon.svg.png" alt="">
+                  <div class="col">
+                      <a class="a" href="index.html">Home</a> 
+                      <a class="a"  href="about3.html">About Us</a>
+                      <a class="a"  href="program.html">Courses</a>
+                      <a class="a"  href="contantact6.html">Contact</a>
+                  </div>
+              </div>
+        </div>
+</header>
+
+<div class="carousel" id="slideset1">
+  <div class="carousel-inner">
+      <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+      <div class="carousel-item">
+          <img src="hi2222.jpg" alt="">
+          <div class="black">
+              <div class="shield">
+                  <h1 class="title">NASABITS <span class="blueshade">TECH </span> 4 ALL</h1>
+                  <p class="preview">Nasabits is a non-profit organization based in Nasarawa<br> State Nigeria, that offers young people technology training<br> and career development opportunities. 
+                  </p>
+              </div>
+          </div>
+      </div>
+      <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+      <div class="carousel-item">
+          <img src="p3.jpg">
+          <div class="black">
+              <div class="shield">
+                  <h1 class="title">NASABITS <span class="blueshade">TECH </span> 4 ALL</h1>
+                  <p class="preview">Nasabits provides technology education and job training to youth,<br> empowering them to gain valuable skill and opportunity<br> for success in their careers and lives
+                  </p>
+                </div>
+          </div>
+      </div>
+      <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+      <div class="carousel-item">
+          <img src="hi3333.jpg">
+          <div class="black">
+              <div class="shield">
+                  <h1 class="title">NASABITS <span class="blueshade">TECH </span> 4 WOMEN</h1>
+                  <p class="preview">
+                      The organization aimed at providing young girls with digital<br> skills and opportunities to work in the technology<br> industry while promoting inclusivity and diversity<br> in the digital economy.
+                  </p>
+                </div>
+          </div>
+      </div>
+      <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+      <label for="carousel-2" class="carousel-control next control-1">›</label>
+      <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+      <label for="carousel-3" class="carousel-control next control-2">›</label>
+      <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+      <label for="carousel-1" class="carousel-control next control-3">›</label>
+      <ol class="carousel-indicators">
+          <li>
+              <label for="carousel-1" class="carousel-bullet">•</label>
+          </li>
+          <li>
+              <label for="carousel-2" class="carousel-bullet">•</label>
+          </li>
+          <li>
+              <label for="carousel-3" class="carousel-bullet">•</label>
+          </li>
+      </ol>
+    </div>
+</div>
+
+<div class="partner">
+  <h1 class="down">Our Sponsors & Partners</h1>
+  <p class="up">
+    The only way we can achieve our ambitious goals is through collaboration with others. We collaborate with a variety of partners to reach
+  </p>
+  <div class="spornsor">
+    <img class="logo22" src="logo 10.png" alt="">
+    <img class="logo22" src="logo ox.png" alt="">
+    <img class="logo22" src="dp-logo-work-in-progress-removebg-preview.png" alt="">
+    <img class="logo22" src="UNICEF-Emblem.png" alt="">
+  </div>
+</div>
+
+<div class="space-con2">
+  <div class="img8">
+    <img class="dan" src="phhd.jpg" alt="">
+  </div>
+  <div class="space">
+    <h1 class="tall3">
+      Though Unwavering Commitment To Excellence,
+      We Pave The Path To Achievement.
+    </h1>
+    <p class="tall">
+      At Nasabits, our commitment to achievement drives us to constantly 
+      innovate and provide cutting-edge solutions to our clients. We stive 
+      to exceed expectations, deliver exceptional customer service, and 
+      create a positive impact on the world through our work. We are 
+      dedicated to continuously improving our skills, processes, and
+      technologies to ensure that we remain a leader in the industry
+      and achieve our goal of providing sustainable and transformative solutions for our clients.
+    </p>
+    <div class="group-all">
+      <div class="group">
+        <a class="link-group" href="#">
+          <i class="fa fa-group"></i>
+        </a>
+        <p class="tall2">500</p>
+        <p  class="tall"> Youth Impacted</p>
+      </div>
+
+      <div class="group">
+        <a class="link-group" href="#">
+          <i class="fa fa-male"></i>
+        </a>
+        <p class="tall2">200</p>
+        <p  class="tall">Male</p>
+      </div>
+
+      <div class="group">
+        <a class="link-group" href="#">
+            <i class="fa fa-female"></i>
+        </a>
+        <p class="tall2">300</p>
+        <p  class="tall">Female</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="box-overall">
+  <div class="box5-overall">
+      <h1 class="pin">OUR COURSES</h1>
+      <h3 class="pin3">WHAT WE OFFER OUR STUDENTS</h3>
+  <p class="normal">
+    The instructors help the students achieve success by teaching the technical skills needed in the labour market and beyond.
+  </p>
+  </div>
+  <div class="d-main">
+      <div class="box1">
+          <img class="img2" src="group9.jpg" alt="">
+          <h2>WEB DEVELOPMENT</h2>
+          <p>
+            Web development is the work involved in developing a web site for the Internet or an...
+          </p>
+          <button class="btn3">
+              <a class="lin" href="web.html">READ MORE</a>
+          </button>
+      </div>
+
+      <div class="box1">
+          <img class="img2" src="group10.webp" alt="">
+          <h2>GRAPHICAL DESIGN</h2>
+          <p>
+            Composing and organizing the visual components of a project is the practice of graphic design....
+          </p>
+          <button class="btn3">
+            <a class="lin" href="design.html">READ MORE</a>
+          </button>
+      </div>
+      <div class="box1">
+          <img class="img2" src="group11.png" alt="">
+          <h2>DIGITAL MARKETING</h2>
+          <p>
+            The advent of Digital marketing, also called online marketing...
+          </p>
+          <button class="btn3">
+            <a class="lin" href="marketing.html">READ MORE</a>
+          </button>
+      </div>
+      <div class="box1">
+          <img class="img2" src="group 16.jpg" alt="">
+          <h2>CAPITAL MARKETING</h2>
+          <p>
+            The promotion of brands
+            via the...
+          </p>
+          <button class="btn3">
+            <a class="lin" href="soft.html">READ MORE</a>
+          </button>
+      </div>
+  </div>
+</div>
+
+<div class="contain-it">
+<div class="box-overall">
+  <div class="d-main">
+      <div class="box1">
+          <img class="img2" src="group 13.jpg" alt="">
+          <h2>PHOTOGRAPHY</h2>
+          <p>
+            The subject in photography is merely the thing (or person, or animal) that is visible in the picture....
+          </p>
+          <button class="btn3">
+            <a class="lin" href="photo.html">READ MORE</a>
+          </button>
+      </div>
+
+      <div class="box1">
+          <img class="img2" src="group15.jpg" alt="">
+          <h2>UI/UX DESIGN</h2>
+          <p>
+            UX design seeks to provide users with simple, effective, pertinent, and overall enjoyable experiences....
+          </p>
+          <button class="btn3">
+            <a class="lin" href="uiux.html">READ MORE</a>
+          </button>
+      </div>
+      <div class="box1">
+          <img class="img2" src="eko2.jpg" alt="">
+          <h2>MENTORSHIP</h2>
+          <p>
+            Mentoring is the support,
+            sway, direction, or advice provided by a mentor. 
+            A mentor is a person
+             who instucts...
+          </p>
+          <button class="btn3">
+            <a class="lin" href="mentor.html">READ MORE</a>
+          </button>
+      </div>
+      <div class="box1">
+          <img class="img2" src="./123.jpeg" alt="">
+          <h2>VIDEOGRAPHY</h2>
+          <p>
+            From a technical standpoint,
+             videography refers to...
+          </p>
+          <button class="btn3">
+            <a class="lin" href="video.html">READ MORE</a>
+          </button>
+      </div>
+  </div>
+</div>
+</div>
+
+
+<div class="space-con1">
+  <div class="img8">
+    <img class="dan" src="vw1.jpg" alt="">
+  </div>
+  <div class="space3">
+    <h1 class="tall3">
+      We Are Committed To Achievement That Has Significance.
+    </h1>
+    <p class="tall">
+      We offer technological education to these teens so they can develop the skills necessary to engage in activities that generate cash. The program is divided into three levels or stages and includes classroom instruction, practical exercises, and internship-based hands-on training.
+    </p>
+    <button class="apply">
+      <a class="lin2" href="donation.html">Donate to Nasabits  &#8594;</a>
+    </button>
+    <button class="apply">
+      <a class="lin2" href="apply.html">Apply As Students 	&#8594;</a>
+    </button>
+  </div>
+</div>
+
+<section class="section2">
+  <div class="select">
+  <div class="flex">
+      <h1 class="log2">NasaBits</h1>
+      <p class="log">
+          NasaBits is a youth based social enterprise that uses ICT creatively to improve the lives of less privileged youth from non-formal settlement
+      </p>
+  </div>
+  <div class="flex">
+      <h1 class="log2">Programmes</h1>
+      <ul class="flex2">
+          <li>
+              <a class="flex3" href="forall.html">Tech For All</a>
+          </li>
+          <li>
+              <a class="flex3" href="forall.html">Tech For Women</a>
+          </li>
+          <li>
+              <a class="flex3" href="tech.html">Tech For Jobs</a>
+          </li>
+          <li>
+              <a class="flex3" href="https://www.ekobits.academy/">EkoBits</a>, <a class="flex3" href="#">BomBits</a>
+          </li>
+      </ul>
+
+  </div>
+  <div class="flex">
+      <h1 class="log2">Quick Links</h1>
+      <ul class="flex2">
+          <li>
+              <a class="flex3" href="index.html">Home</a>
+          </li>
+          <li>
+              <a class="flex3" href="about3.html">About</a>
+          </li>
+          <li>
+              <a class="flex3" href="tech.html">Sustainability</a>
+          </li>
+          <li>
+              <a class="flex3" href="contantact6.html">Contact</a>
+          </li>
+      </ul>
+  </div>
+
+  <div class="flex">
+      <h1 class="log2">Contact Us</h1>
+      <p>
+          <i class="fa fa-map-marker" aria-hidden="true">
+              No 4, Asibi Street off Jos Rd, Lafia
+          </i>
+      </p>
+      <p>
+          <i class="fa fa-home" aria-hidden="true">
+              Nasabits@gmail.com
+         </i>
+      </p>
+      <p>
+          <i class="fa fa-phone" aria-hidden="true">
+              +2348173768505
+         </i>
+      </p>          
+  </div>
+</div>
+</section>
+<div class="copy">
+  <p class="copy2">
+      &#169;2023 Tech 4 All. All Rights Reserved Designed By <a class="a5" href="index.html">
+          Nasabits ICT Acaddemy
+      </a>
+  </p>
+</div>
+
+</body>
+</html>

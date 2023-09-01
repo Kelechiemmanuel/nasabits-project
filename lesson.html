@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+    display: none;
+}
+.label-con{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+}
+.label-con label{
+    display: block;
+    width: 15px;
+    margin: 20px;
+    /* border-radius: 50%; */
+    height: 3px;
+    background-color: transparent;
+    border: 2px solid lightgray;
+
+}
+.main-slide{
+    width: 90%;
+    height: 70%;
+    background-color: blue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.slide1-main{
+    width: 0;
+    height: 100%;
+    float: left;
+    transition: 0.5s ease-in;
+    background-color: gray;
+}
+.slide2-main{
+    width: 0;
+    height: 100%;
+    float: left;
+    transition: 0.5s ease-in;
+    background-color: lightgray;
+}
+.slide3-main{
+    width: 0;
+    height: 100%;
+    transition: 0.5s ease-in;
+    float: left;
+    background-color: white;
+}
+#slide1:checked ~ .label-con label:nth-child(1),
+#slide2:checked ~ .label-con label:nth-child(2),
+#slide3:checked ~ .label-con label:nth-child(3){
+    background-color: lightgrey;
+}
+#slide1:checked ~ .main-slide .slide1-main,
+#slide2:checked ~ .main-slide .slide2-main,
+#slide3:checked ~ .main-slide .slide3-main{
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+    <input type="radio" name="radio" id="slide1" checked/>
+    <input type="radio" name="radio" id="slide2" />
+    <input type="radio" name="radio" id="slide3" />
+
+     <div class="main-slide">
+        <div class="slide1-main"></div>
+        <div class="slide2-main"></div>
+        <div class="slide3-main"></div>
+     </div>
+
+    <div class="label-con">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+    </div>
+</body>
+</html>

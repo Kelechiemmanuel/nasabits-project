@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="WhatsApp_Image_2023-04-10_at_17.26.04-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Web Development Course</title>
+    <style>
+                     header{
+            width: 100%;
+            height: 20vh;
+            position: fixed;
+            top: 0;
+            background-color: #fff;
+            z-index: 100;
+            right: 0;
+            width: 100%;
+            left: 0;
+            box-shadow: rgba(0, 0, 0, 0.15) 4.95px 4.95px 6.6px;
+        }
+        *{
+            margin: 0;
+            font-family: Georgia;
+        }
+        .logo{
+            width: 70px;
+            margin-left: 50px;
+        }
+        .hamburger{
+            width: 30px;
+            margin-right: 40px;
+        }
+        .nav-container{
+            display: flex;
+            position: fixed;
+            background-color: #fff;
+            z-index: 100;
+            right: 0;
+            width: 100%;
+            margin-top: 20px;
+            left: 0;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 2px;
+            margin-right: 40px;
+        }
+        .nav-items{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .nav-lists{
+            display: flex;
+        }
+        .nav-bar{
+         list-style: none;
+         margin: 20px;
+        }
+        .nav-link{
+            text-decoration: none;
+            color: #000000c7;
+            font-size: 20px;
+           font-family: Georgia, 'Times New Roman', Times, serif;
+            transition: all 0.5s;
+        }
+        .nav-link:hover{
+          text-decoration: underline;
+          color: #5cc8d7ff;
+          transform: scale(1.1);
+        }
+        .pri-btn{
+            background-color: #fff;
+            border: none;
+            height: 40px;
+            width: 100px;
+            color: #5cc8d7ff;
+            border: 2px solid #5cc8d7ff;
+           
+        }
+        .pri-btn:hover{
+            background-color:  transparent;
+            color: #fff;
+        }
+      
+        .btn-container:hover{
+            background-color:  #5cc8d7ff;
+        }
+
+        .home{
+            display: flex;
+            justify-content: center;
+        }
+        .center{
+            margin-top: 10px;
+            height: 76vh;
+            width: 100%;
+            background-image: url(group2.webp);
+            background-position: center;
+            background-size: cover;
+        }
+        .black{
+            background-color: black;
+            height: 71.5%;
+            width: 100%;
+            padding-top: 20vh;
+        }
+        .header-container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #00203fff;
+            height: 30px;
+        }
+        .nav-link2{
+            margin: 15px;
+        }
+        .link{
+            display: flex;
+        }
+        i{
+            color: #5cc8d7ff;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .media-handle{
+            display: flex;
+            margin-right: 40px;
+        }
+        .media{
+            margin: 15px;
+        }
+        @media screen and (max-width: 700px) {
+            .nav-items{
+                display: none;
+            }
+            .pri-btn{
+                display: none;
+            }
+            .header-container{
+                display: none;
+            }
+            .logo{
+                margin-top: 40px;
+            }
+            .hamburger{
+                margin-top: 40px;
+            }
+            .program{
+                display: flex;
+                flex-wrap: wrap;
+                /* margin-left: 50px; */
+            
+            }
+        }
+           .cache2{
+            color:  #fff;
+        }
+        .img4{
+            width: 425px;
+        }
+        /* .img4:hover{
+            
+            transform: scale(1.1);
+        } */
+        .program-all{
+            text-align: center;
+            margin-top: 100px;
+            margin-top: 150px;
+        }
+        .program{
+            margin-top: 40px;
+            display: flex;
+            width: 100%;
+        }
+        .project-all{
+            width: 430.8px;
+            background-color: rgb(205, 217, 230);
+            text-align: center;
+            margin: 10px;
+            height: 70vh;
+        }
+        .project-all:hover{
+            box-shadow: 0 0 5px 0 rgb(104, 102, 102);
+            border: none;
+        }
+
+        .section2{
+            display: flex;
+            background-image: url(eko.jpg);
+            background-position: top;
+            margin-top: 50px;
+            height: 50vh;
+          }
+          .select{
+            background-color: #0c021ac7;
+            width: 100%;
+            justify-content: space-around;
+            display: flex;
+            height: 47vh;
+            padding-top: 20px;
+          }
+          .flex{
+            text-align: left;
+          }
+          .flex2{
+            margin-left: -40px;
+          }
+          .flex3:hover{
+            text-decoration: underline;
+          }
+          .flex3{
+            color: #5cc8d7ff;
+          }
+          .log{
+            width: 300px;
+            color: #5cc8d7ff;
+          }
+          .log2{
+            color: #5cc8d7ff;
+          }
+ 
+      @media screen and (max-width: 500px) {
+        .space-con{
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #fff;
+        }
+        .space{
+            margin-top: 5px;
+            background-color: #00203fff;
+            width: 450px;
+            margin-left: 15px;
+            padding-left: 30px;
+        }
+        .dan{
+            width: 440px;
+            margin-bottom: 10px;
+            margin-left: 15px;
+        }
+        .space-con{
+            height: 39vh;
+            width: 450px;
+        }
+        .heading2{
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        .section2{
+            margin-top: 30px;
+            width: 100%;
+            margin: 0;
+            height: 100vh;
+        }
+        .select{
+            display: flex;
+            flex-wrap: wrap;
+            height: 97vh;
+            width: 100%;
+        }
+        .log2{
+            width: 400px;
+        }
+        .project-all{
+            margin-left: auto;
+            margin-right: auto;
+        }
+      }
+      
+      @media screen and (max-width: 900px) {
+            .nav-items{
+                display: none;
+            }
+            .pri-btn{
+                display: none;
+            }
+            .header-container{
+                display: none;
+            }
+            .logo{
+                margin-top: 40px;
+            }
+            .hamburger{
+                margin-top: 40px;
+            }
+        }
+        @media screen and (min-width: 900px) {
+            .hamburger{
+                display: none;
+            }
+            
+        }
+        .row{
+        display: inline-block;
+        position: relative;
+      }
+          
+        .col{
+        position: absolute;
+        width: 250px;
+        border-radius: 10px;
+        left: -140px;
+        top: 70px;
+        text-align: center;
+        display: none;
+        color: white;
+        transition: all 2s;
+        background-color: rgba(0, 31, 63, 0.808);
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        overflow: auto;
+      } 
+      .row:hover .col{
+        display: block;
+      }
+      .col a{
+        display: block;
+        padding: 5px;
+        color: white;
+        text-decoration: none;
+      }
+      .col a:hover{
+        color: #ffff;
+        background-color: #5cc8d7ff;
+
+      }  
+      .copy{
+        background-color: #000000c7;
+        margin-top: 3px;
+        height: 40px;
+        width: 100%;
+      }
+      .copy2{
+        color: #fff;
+        text-align: center;
+      }
+      .a5{
+        color: #5cc8d7ff;
+      }
+      .cache{
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <ul class="link">
+                <li>
+                    <a  class="nav-link2" href="#">
+                        <i class="fa fa-phone" aria-hidden="true"> +2348173768505</i>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link2" href="#">
+                        <i class="fa fa-map-marker" aria-hidden="true"> No 4, Asibi Street off Jos Rd, Lafia</i>
+                    </a>
+                </li>
+                <li>
+                    <a  class="nav-link2" href="#">
+                        <i class="fa fa-home" aria-hidden="true"> hello@nasabitsacademy</i>
+                    </a>
+                </li>
+            </ul>
+            <div class="media-handle">
+                <div class="media">
+                    <a href="https://www.facebook.com/">
+                        <i class="fa fa-facebook-f"></i>
+                    </a>
+                </div>
+                <div class="media">
+                    <a href="https://www.instagram.com/">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="media">
+                    <a href="https://www.linkedin.com//">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            </div>
+        <div class="nav-container">
+            <div>
+                <img class="logo" src="WhatsApp_Image_2023-04-10_at_17.26.04-removebg-preview.png" alt="">
+            </div>
+            <nav class="nav-items">
+                <ul class="nav-lists">
+                    <li class="nav-bar">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-bar">
+                        <a class="nav-link" href="about3.html">About Us</a>
+                    </li>
+                    <li class="nav-bar">
+                        <a class="nav-link" href="program.html">Courses</a>
+                    </li>
+                    <li class="nav-bar">
+                        <a class="nav-link" href="contantact6.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="btn-container">
+                <button class="pri-btn">
+                    <a style="color: #00203fff;" href="donation.html">DONATE</a>
+                </button>
+            </div>
+            <div class="btn-container">
+                <button class="pri-btn">
+                    <a style="color: #00203fff;" href="donation.html">LOGIN</a>
+                </button>
+            </div>
+            <div class="row">
+                <img class="hamburger" src="Hamburger_icon.svg.png" alt="">
+                <div class="col">
+                    <a class="a" href="index.html">Home</a> 
+                    <a class="a"  href="about3.html">About Us</a>
+                    <a class="a"  href="program.html">Courses</a>
+                    <a class="a"  href="contantact6.html">Contact</a>
+                </div>
+        </div>
+        </div>
+    </header>
+    <div class="program-all">
+        <div class="heading2">
+            <h1>Web Development Course</h1>
+            <p class="cache">
+                We offer the top Coaching Services solutions. Contact us right away if you require any assistance with cleaning or<br> maintenance to get your body clean.
+            </p>
+
+        </div>
+        <div class="program">
+            <div class="project-all">
+                <img class="img4" src="group9.jpg" alt="">
+                <h1>Frontend</h1>
+                <p class="cache">
+                    Creative HTML High Performance Template. Together, let's make something amazing and novel. Superior Services
+                </p>
+            </div>
+    
+            <div class="project-all">
+                <img class="img4" src="back.jpg" alt="">
+                <h1>Backend</h1>
+                <p class="cache">
+                    This course focuses on using the stacks HTML, CSS Js, React Js, and Vue Js to build user interfaces and high-quality user experiences.
+    
+                </p>
+            </div>
+    
+            <div class="project-all">
+                <img class="img4" src="back2.jpg" alt="">
+                <h1>Fullstack</h1>
+                <p class="cache">
+                    HTML template with high performance and creativity. Let's collaborate to create something amazing and innovative. Top Services.
+    
+                </p>
+            </div>
+    
+        </div>
+    </div>
+    <section class="section2">
+        <div class="select">
+        <div class="flex">
+            <h1 class="log2">NasaBits</h1>
+            <p class="log">
+                NasaBits is a youth based social enterprise that uses ICT creatively to improve the lives of less privileged youth from non-formal settlement
+            </p>
+        </div>
+        <div class="flex">
+            <h1 class="log2">Programmes</h1>
+            <ul class="flex2">
+                <li>
+                    <a class="flex3" href="forall.html">Tech For All</a>
+                </li>
+                <li>
+                    <a class="flex3" href="forall.html">Tech For Women</a>
+                </li>
+                <li>
+                    <a class="flex3" href="tech.html">Tech For Jobs</a>
+                </li>
+                <li>
+                    <a class="flex3" href="https://www.ekobits.academy/">Ekobits <a class="flex3" href="#">Bombits</a></a>
+                </li>
+            </ul>
+
+        </div>
+        <div>
+            <h1 class="log2">Quick Links</h1>
+            <ul class="flex2">
+                <li>
+                    <a class="flex3" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="flex3" href="about3.html">About</a>
+                </li>
+                <li>
+                    <a class="flex3" href="#">Sustainability</a>
+                </li>
+                <li>
+                    <a class="flex3" href="contantact6.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="flex">
+            <h1 class="log2">Contact Us</h1>
+            <p>
+                <i class="fa fa-map-marker" aria-hidden="true">
+                    No 4, Asibi Street off Jos Rd, Lafia
+                </i>
+            </p>
+            <p>
+                <i class="fa fa-home" aria-hidden="true">
+                    hello@nasabitsacademy
+               </i>
+            </p>
+            <p>
+                <i class="fa fa-phone" aria-hidden="true">
+                    +2348173768505
+               </i>
+            </p>          
+        </div>
+    </div>
+</section>
+<div class="copy">
+    <p class="copy2">
+        &#169;2023 Tech 4 All. All Rights Reserved Designed By <a class="a5" href="index.html">
+            Nasabits ICT Acaddemy
+        </a>
+    </p>
+</div>
+</body>
+</html>
